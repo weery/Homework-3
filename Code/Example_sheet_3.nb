@@ -1,0 +1,68 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 10.2' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[      1611,         59]
+NotebookOptionsPosition[      1247,         43]
+NotebookOutlinePosition[      1587,         58]
+CellTagsIndexPosition[      1544,         55]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+Cell["Combi - Example sheet x", "Section",
+ CellChangeTimes->{{3.6635987468206463`*^9, 3.663598837086426*^9}}],
+
+Cell[TextData[{
+ "Problem 1\n",
+ StyleBox["a)\nb)\nc)", "Subsection"]
+}], "Subchapter",
+ CellChangeTimes->{{3.66359884482189*^9, 3.6635988897426147`*^9}}],
+
+Cell[TextData[{
+ "Problem 2\n",
+ StyleBox["a)\nb)\nc)", "Subsection"]
+}], "Subchapter",
+ CellChangeTimes->{{3.663598858765731*^9, 3.6635988605730247`*^9}, {
+  3.663598908195674*^9, 3.6635989092754436`*^9}}],
+
+Cell[TextData[{
+ "Problem 3\n",
+ StyleBox["a)\nb)\nc)", "Subsection"]
+}], "Subchapter",
+ CellChangeTimes->{{3.6635988640244503`*^9, 3.663598865014146*^9}, {
+  3.663598911802206*^9, 3.6635989120163507`*^9}}]
+},
+WindowSize->{752, 767},
+WindowMargins->{{Automatic, 0}, {Automatic, 0}},
+FrontEndVersion->"10.2 for Microsoft Windows (64-bit) (July 29, 2015)",
+StyleDefinitions->"Default.nb"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[558, 20, 110, 1, 63, "Section"],
+Cell[671, 23, 154, 4, 116, "Subchapter"],
+Cell[828, 29, 206, 5, 116, "Subchapter"],
+Cell[1037, 36, 206, 5, 116, "Subchapter"]
+}
+]
+*)
+
+(* End of internal cache information *)
