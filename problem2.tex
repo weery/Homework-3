@@ -1,4 +1,47 @@
 \subsection{a)}
 
+$$0 = a - (b+1)u + u^2v$$
+$$0 = bu - u^2v$$
+
+$$0 = a-(b+1)u +bu$$
+$$0 = a - u$$
+$$u = a$$
+
+$$0 = ba - a^2v$$
+$$v = \frac{b}{a}$$
+
+$$(u^*, v^*)=\left(a,\frac{b}{a}\right)$$
+
+$$J^* = \left(
+\begin{array}{cc}
+    b-1 & a^2 \\
+    -b  & -a^2
+\end{array}
+\right)$$
+
+For the steady state to be stable the following conditions must be true
+
+$$Tr(J^*) < 0$$
+$$Det(J^*) > 0$$
+Inserting the given values $a=3$, $b=8$ we get
+$$Tr(J^*) = -2 < 0$$
+$$Det(J^*) = 9 > 0$$
+Thus the steady state is stable.
+
+For the system to exhibit diffusion driven instability the following conditions must also hold
+
+$$D_v \frac{\partial f}{\partial u} + \frac{\partial g}{\partial v} < 0$$
+$$(D_v \frac{\partial f}{\partial u}+ \frac{\partial g}{\partial v})^2 - 4D_v Det(J^*) > 0$$
+
+Inserting the values for a, b and (u^*, v^*),
+
+$$D_v > \frac{9}{7}$$
+
+$$D_v > \frac{81}{49} + \sqrt{\left(\frac{81}{49}\right)^2 - \frac{81}{49}} = 2.69$$
+$$D_v < \frac{81}{49} - \sqrt{\left(\frac{81}{49}\right)^2 - \frac{81}{49}} = 0.61$$
+
+Thus for the system to exhibit diffusion driven instability $D_v > 2.69$.
+
+
 \subsection{b)}
 
