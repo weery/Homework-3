@@ -111,24 +111,46 @@ To study the dynamics of this system we write it with a new variable $v=\frac{\p
 \frac{\partial v}{\partial z}&=-\frac{c}{D}v-\frac{(b-c)n(1-\frac{n}{K})}{D}.
 \end{align*}
 
-This system has the steady states 
+This system has the steady states $(N^*,v^*)=(0,0)$ and $(N^*,v^*)=(K,0)$.
+
+To check the stability of these steady states we need to consult the determinant of the Jacobian matrix,
 
 \begin{equation}
-c_s>\sqrt{4D(b-c)} \Rightarrow c_s>\sqrt{2}
+\mathbb{J}=\left(\begin{array}{cc}
+0 & 1 \\
+  \frac{(b-c)(K-2N)}{KD} & -\frac{c}{D}
+\end{array}\right),
 \end{equation}
 
+ evaluated at the steady states.
+ 
+ $$
+ det(\mathbb{J}^*_1)= -\frac{b-c}{D}
+ $$
+ and
+ 
+ $$
+ det(\mathbb{J}^*_2)=\frac{b-c}{D}.
+ $$
+ 
+ $$
+ Tr(\mathbb{J}^*_1)=Tr(\mathbb{J}^*_2)=-\frac{c}{D}
+ $$
+ 
+ steady state 1 saddle point if $c^2_s>4D(b-c)$ or stable spiral if $C^2_s<4D(b-c)$.
+ 
+ WE get a traveling wave solution if 
+ $$
+ c^2_s>4D(b-c)\Rightarrow c_s > \sqrt{4D(b-c)}.
+ $$
+ 
 \subsection{c)}
-%
-%\begin{figure}[h]
-%    \centering
-%    \includegraphics[width=0.45\textwidth]{img/listdensityplot_S.eps}
-%    \includegraphics[width=0.45\textwidth]{img/listdensityplot_P.eps}
-%  \caption{}
-%\end{figure}
 
 \begin{figure}
 \centering
 \includegraphics[scale=0.5]{img/listdensityplot_S.png}
 \includegraphics[scale=0.5]{img/listdensityplot_P.png}
-\caption{\label{fig:pic1c}}
+\caption{\label{fig:pic1c} In the left panel, depicting the development of the suseptible individuals $S$ in time and space, we can calculate the speed of the seen traveling wave by $c=\frac{\delta x}{\delta t}$. The same can be done for the infected individuals $I$ in the right panel.}
 \end{figure}
+
+We can see the expansion of the susceptibles $s$ in the left panel of figure \ref{fig:pic1c}. The population expands in both directions with equal constant velocity and expansion resembles a traveling wave. The steady state for the spatially inhomogeneous suceptible habitat size are the same as the homogeneous steady stable state which is $10$. The speed of this traveling wave is estimated to $1.35$. We see in the figure that the number of susceptibles overshoots over the steady state, which might suggest that the   Carrying capacity term of the system is delayed which is actually seen in the right panel where the number of infected to rise after some time delay. We see that the number of 
