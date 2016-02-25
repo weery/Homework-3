@@ -89,18 +89,46 @@ From steady state $n=2$.
 Change of variables $N=I+S$ inserted into equations \eqref{eq:partIt} and \eqref{eq:partSt} gives,
 
 \begin{equation}
-\frac{\partial N}{\partial t}=bN -cN -\frac{N^2}{K}+D\nabla^2N
+\frac{\partial N}{\partial t}=bN -cN -\frac{N^2}{K}+D\nabla^2N.
 \end{equation}
+
+If we assume that we are studying the dynamics in one dimension, we can replace the $\nabla^2$ operator with a second derivative in that direction, i.e. $\nabla^2\rightarrow \frac{\partial^2}{\partial x^2}$ and we get the time evolution as,
+
+\begin{equation}
+\frac{\partial N}{\partial t}=(b-c)N\left(1-\frac{N}{K}\right)+D\frac{\partial^2 N}{\partial x^2}.
+\end{equation}
+
+To see if the dynamics exhibits a travelling wave solution we try to reduce the spatial and temporal dimension to one by $z=x-ct$ which would yield,
+
+\begin{equation}
+-c\frac{\partial N}{\partial z}=(b-c)N\left(1-\frac{N}{K}\right)+D\frac{\partial^2 N}{\partial x^2}.
+\end{equation}
+
+To study the dynamics of this system we write it with a new variable $v=\frac{\partial n}{\partial z}$ and receive the system 
+
+\begin{align*}
+\frac{\partial n}{\partial z}&=v\\
+\frac{\partial v}{\partial z}&=-\frac{c}{D}v-\frac{(b-c)n(1-\frac{n}{K})}{D}.
+\end{align*}
+
+This system has the steady states 
 
 \begin{equation}
 c_s>\sqrt{4D(b-c)} \Rightarrow c_s>\sqrt{2}
 \end{equation}
 
 \subsection{c)}
+%
+%\begin{figure}[h]
+%    \centering
+%    \includegraphics[width=0.45\textwidth]{img/listdensityplot_S.eps}
+%    \includegraphics[width=0.45\textwidth]{img/listdensityplot_P.eps}
+%  \caption{}
+%\end{figure}
 
-\begin{figure}[h]
-    \centering
-    \includegraphics[width=0.45\textwidth]{img/listdensityplot_S.eps}
-    \includegraphics[width=0.45\textwidth]{img/listdensityplot_P.eps}
-  \caption{}
+\begin{figure}
+\centering
+\includegraphics[scale=0.5]{img/listdensityplot_S.png}
+\includegraphics[scale=0.5]{img/listdensityplot_P.png}
+\caption{\label{fig:pic1c}}
 \end{figure}
