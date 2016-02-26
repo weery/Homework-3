@@ -55,9 +55,9 @@ Thus for the system to exhibit diffusion driven instability $D_v > 2.69$, since 
 
 \subsection*{b)}
 
-In figure \ref{fig:pic2} we see the result of simulating the following system described by \eqref{eq:2a} on a 128 by 128 lattice.
+In figure \ref{fig:pic2b} we see the result of simulating the following system described by \eqref{eq:2a} on a 128 by 128 lattice.
 
-This is done using integration with a time step of $\delta t = 0.01$ and also using a discretized Laplacian. Our Implementation uses four matrices, two that stores the previous state for both u and v in all positions, and two that are used for temporarily storing the state in each time step. This is done simply by having three for loops, one which takes care of the time steps and two that iterates through $x$ and $y$ of the matrices. At each time step one part of the integration is calculated.
+This is done using integration with a time step of $\Delta t = 0.01$ and also using a discretized Laplacian. Our Implementation uses four matrices, two that stores the previous state for both u and v in all positions, and two that are used for temporarily storing the state in each time step. This is done simply by having three for loops, one which takes care of the time steps and two that iterates through $x$ and $y$ of the matrices. At each time step one part of the integration is calculated.
 
 \begin{figure}[h]
 \centering
@@ -69,5 +69,5 @@ System Simulated with $D_v=5$\\
 \includegraphics[scale=0.5]{img/2bd5Comb.png}\\
 System Simulated with $D_v=9$\\
 \includegraphics[scale=0.5]{img/2bd9Comb.png}\\
-\caption{\label{fig:pic2b} The pictures to the left shows the system in the transient state after 200 time steps, for different values of $D_v$, and the pictures to the right shows the system after reaching the steady state.}
+\caption{\label{fig:pic2b} The pictures to the left shows the system in the transient state after 200 time steps, for different values of $D_v$, and the pictures to the right shows the system after reaching the spatially inhomogeneous steady state.}
 \end{figure}
