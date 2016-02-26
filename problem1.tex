@@ -78,12 +78,18 @@ $$$$
 K<\frac{b}{a(b-c)}.
 $$
 
-For the second steady state, the condition for being stable and also having positive nonzero values for a critical value $K_c$ as follows
+For the second steady state, the condition for being stable and also having positive nonzero values for a critical value $K_c$ as follows,
 
+$$
+K_c>\frac{c}{a(b-c)}
+$$$$
+K_c>\frac{b}{a(b-c)}
+$$
+
+and since $b>c$ we have that the critical value of $K_c$ is
 \begin{equation}
-K_c=Max\left[\frac{b}{a(b-c)},\frac{2b-3c}{a(b-c)}\right]
+k_c=\frac{b}{a(b-c)}.
 \end{equation}
-
 \subsection*{b)}
 
 The introduction of the new variable $N=I+S$, which is the total population, inserted into equations \eqref{eq:partIt} and \eqref{eq:partSt} gives,
@@ -147,13 +153,13 @@ $$
  
 \subsection*{c)}
 
-\begin{figure}[h]
+\begin{figure}
 \centering
 \includegraphics[scale=0.5]{img/listdensityplot_S.png}
 \includegraphics[scale=0.5]{img/listdensityplot_P.png}
 \caption{\label{fig:pic1c} In the left panel, depicting the development of the susceptible individuals $S$ in time and space, the speed of the travelling wave can calculated by $c=\frac{\delta x}{\delta t}$. The same can be done for the infected individuals $I$ in the right panel.}
 \end{figure}
 
-We can see the expansion of the susceptibles $S$ in the left panel of figure \ref{fig:pic1c}. The population expands in both directions with equal constant velocity and expansion resembles a traveling wave. The steady state for the spatially inhomogeneous suceptible habitat size are the same as the homogeneous steady stable state which is $10$. The speed of this traveling wave is estimated to $1.35$. We see in the figure that the number of susceptibles overshoots over the steady state, which might suggest that the   Carrying capacity term of the system is delayed which is actually seen in the right panel where the number of infected to rise after some time delay. \\
+We can see the expansion of the susceptible $S$ in the left panel of figure \ref{fig:pic1c}. The population expands in both directions with equal constant velocity and expansion resembles a travelling wave. The steady state for the spatially inhomogeneous susceptible habitat size are the same as the homogeneous steady stable state which is $10$. The speed of this travelling wave is estimated to $1.35$. We see in the figure that the number of susceptible overshoots over the steady state, which means that the spatial term trumps the maximum capacity from the carrying capacity term until the number of infected has time to kill of the superfluous population. \\
 
-We see that the number of infected does not overshoot, but stops at the steady steate $I^*=5$. We can also calculate the velocity to $1.33$ which is just below the velocity for the susceptibles. This might be because the number of infected depends on the number of susceptibles of the previous batch and have a harder time to catch up to the number of susceptibles.
+We see that the number of infected does not overshoot, but stops at the steady state $I^*=5$. We can also calculate the velocity to $1.33$ which is just below the velocity for the susceptible. This might be because the number of infected depends on the number of susceptible of the previous batch and have a harder time to catch up to the number of susceptible.
