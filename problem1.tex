@@ -1,4 +1,4 @@
-\subsection{a)}
+\subsection*{a)}
 
 \begin{equation}
 \label{eq:partSt}
@@ -22,7 +22,7 @@ $$
 \frac{\partial I^*}{\partial t}=-cI^*-\frac{I^*(I^*+S^*)}{K}+aS^*I^*=0.
 $$
 
-We can directly rule our the steady states which involve $S^*=0$ or $S^*<0 \vee I^*<0$.
+We can directly rule our the steady states which involve $S^*\leq0$ or $I^*<0$.
 
 \begin{itemize}
 \item $S^*_1=K(c-b), \;\; I^*_1=0$
@@ -31,7 +31,7 @@ We can directly rule our the steady states which involve $S^*=0$ or $S^*<0 \vee 
 
 
 
-TO see the stability of these steady states we need to consider the jacobian for thses states,
+To see the stability of these steady states we need to consider the jacobian for theses states,
 
 \begin{equation}
 \mathbb{J}^*_n=\left.\left(
@@ -68,7 +68,7 @@ To have a stable steady state we need that
 \end{enumerate}
 
 
-For $n=1$ we get that the steady state is stable for
+For the first steady state we get that the steady state is stable for
 
 $$
 K>\frac{3c}{a(c-b)}
@@ -76,15 +76,15 @@ $$$$
 K<\frac{2c-b}{a(c-b)}
 $$
 
-which can't be fulfilled at the some time.
+which can't be fulfilled at the same time.
 
+For the second steady state however the conditions given above don't contradict each other and we can find $K_c$ as follows
 
 \begin{equation}
 K_c=Max\left[\frac{b}{a(b-c)},\frac{2b-3c}{a(b-c)}\right]
 \end{equation}
 
-From steady state $n=2$.
-\subsection{b)}
+\subsection*{b)}
 
 The introduction of the new variable $N=I+S$, which is the total population, inserted into equations \eqref{eq:partIt} and \eqref{eq:partSt} gives,
 
@@ -145,7 +145,7 @@ $$
  c^2_s>4D(b-c)\Rightarrow c_s > \sqrt{4D(b-c)}.
  $$
  
-\subsection{c)}
+\subsection*{c)}
 
 \begin{figure}
 \centering
