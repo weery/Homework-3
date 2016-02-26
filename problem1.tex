@@ -86,7 +86,7 @@ K_c=Max\left[\frac{b}{a(b-c)},\frac{2b-3c}{a(b-c)}\right]
 From steady state $n=2$.
 \subsection{b)}
 
-Change of variables $N=I+S$ inserted into equations \eqref{eq:partIt} and \eqref{eq:partSt} gives,
+The introduction of the new variable $N=I+S$, which is the total population, inserted into equations \eqref{eq:partIt} and \eqref{eq:partSt} gives,
 
 \begin{equation}
 \frac{\partial N}{\partial t}=bN -cN -\frac{N^2}{K}+D\nabla^2N.
@@ -98,49 +98,50 @@ If we assume that we are studying the dynamics in one dimension, we can replace 
 \frac{\partial N}{\partial t}=(b-c)N\left(1-\frac{N}{K}\right)+D\frac{\partial^2 N}{\partial x^2}.
 \end{equation}
 
-To see if the dynamics exhibits a travelling wave solution we try to reduce the spatial and temporal dimension to one by $z=x-ct$ which would yield,
+To see if the dynamics exhibits a travelling wave solution we try to reduce the spatial and temporal dimension to one by $z=x-ct$, and changing the population variable to $N(x,t)\rightarrow u(z)$ which would yield,
 
 \begin{equation}
--c\frac{\partial N}{\partial z}=(b-c)N\left(1-\frac{N}{K}\right)+D\frac{\partial^2 N}{\partial x^2}.
+-c\frac{\partial u}{\partial z}=(b-c)u\left(1-\frac{u}{K}\right)+D\frac{\partial^2 u}{\partial x^2}.
 \end{equation}
 
-To study the dynamics of this system we write it with a new variable $v=\frac{\partial n}{\partial z}$ and receive the system 
+To study the dynamics of this system introduce yet another variable, $v=\frac{\partial u}{\partial z}$, and receive the system 
 
 \begin{align*}
-\frac{\partial n}{\partial z}&=v\\
-\frac{\partial v}{\partial z}&=-\frac{c}{D}v-\frac{(b-c)n(1-\frac{n}{K})}{D}.
+\frac{\partial u}{\partial z}&=v\\
+\frac{\partial v}{\partial z}&=-\frac{c}{D}v-\frac{(b-c)u(1-\frac{u}{K})}{D}.
 \end{align*}
 
-This system has the steady states $(N^*,v^*)=(0,0)$ and $(N^*,v^*)=(K,0)$.
+This system has the steady states $(u^*,v^*)=(0,0)$ and $(u^*,v^*)=(K,0)$.
 
-To check the stability of these steady states we need to consult the determinant of the Jacobian matrix,
+To check the stability of these steady states we need to consult the Jacobian matrix,
 
 \begin{equation}
 \mathbb{J}=\left(\begin{array}{cc}
 0 & 1 \\
-  \frac{(b-c)(K-2N)}{KD} & -\frac{c}{D}
+  \frac{(b-c)(K-2u)}{KD} & -\frac{c}{D}
 \end{array}\right),
 \end{equation}
 
- evaluated at the steady states.
+ evaluated at the steady states. To check the stability of the steady states we need to check the signs of the determinant and trace of the jacobian, and the value of the determinant for these states are,
  
  $$
- det(\mathbb{J}^*_1)= -\frac{b-c}{D}
+ det(\mathbb{J}^*_1)= -\frac{b-c}{D}<0
  $$
  and
  
  $$
- det(\mathbb{J}^*_2)=\frac{b-c}{D}.
+ det(\mathbb{J}^*_2)=\frac{b-c}{D}>0.
  $$
  
+ Their traces does not depend on the steady state itself and they are therefore the same 
  $$
- Tr(\mathbb{J}^*_1)=Tr(\mathbb{J}^*_2)=-\frac{c}{D}
+ Tr(\mathbb{J}^*_1)=Tr(\mathbb{J}^*_2)=-\frac{c}{D}<0.
  $$
  
- steady state 1 saddle point if $c^2_s>4D(b-c)$ or stable spiral if $C^2_s<4D(b-c)$.
- 
- WE get a traveling wave solution if 
- $$
+The first state has $det(\mathbb{J}^*)<0$ and $Tr(\mathbb{J}^*)<0$ which makes it a candidate for being both a saddle point and a stable spiral. It is a saddle point if $c^2_s>4D(b-c)$ and a steady spiral if $c^2_s<4D(b-c)$. To get a travelling wave solution we need to go from the steady state with a low amount of population, i.e. the first steady state, to the second one. To accomplish this we need the first steady state to be a saddle point, otherwise there is no way for the population to increase.\\
+So now we have an expression for the velocity $c_s$ when we have a saddle point and the minimum velocity is thusly,
+
+$$
  c^2_s>4D(b-c)\Rightarrow c_s > \sqrt{4D(b-c)}.
  $$
  
