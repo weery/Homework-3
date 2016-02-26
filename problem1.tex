@@ -1,5 +1,7 @@
 \subsection*{a)}
 
+We want to study the time and space evolution of the two interacting populations $S$ (susceptibles) and $I$ (infected) which adheres the following dynamics,
+
 \begin{equation}
 \label{eq:partSt}
 \frac{\partial S}{\partial t} = b(S+I)-cS -\frac{S(I+S)}{K}-aSI + D\nabla^2S,
@@ -10,7 +12,7 @@
 \frac{\partial I}{\partial t}= -cI -\frac{I(I+S)}{K}+aSI +D\nabla^2I.
 \end{equation}
 
-For the spatially homogeneous model, that is $D=0$ we have the steady states when
+For the spatially homogeneous model, that is $D=0$, we find the steady states by solving,
 
 $$
 \frac{\partial S^*}{\partial t}=b(S^*+I^*)-cS^*-\frac{S^*(I^*+S^*)}{K}-aS^*I^* =0
@@ -25,7 +27,7 @@ $$
 We can directly rule our the steady states which involve $S^*\leq0$ or $I^*<0$.
 
 \begin{itemize}
-\item $S^*_1=K(c-b), \;\; I^*_1=0$
+\item $S^*_1=K(b-c), \;\; I^*_1=0$
 \item $S^*_2=\frac{b}{a}, \;\; I^*_2=K(b-c)-\frac{b}{a}$ 
 \end{itemize}
 
@@ -71,14 +73,12 @@ To have a stable steady state we need that
 For the first steady state we get that the steady state is stable for
 
 $$
-K>\frac{3c}{a(c-b)}
+K<\frac{2b-c}{a(b-c)}=\frac{b}{a(b-c)}+\frac{1}{a(b-c)}
 $$$$
-K<\frac{2c-b}{a(c-b)}
+K<\frac{b}{a(b-c)}.
 $$
 
-which can't be fulfilled at the same time.
-
-For the second steady state however the conditions given above don't contradict each other and we can find $K_c$ as follows
+For the second steady state, the condition for being stable and also having positive nonzero values for a critical value $K_c$ as follows
 
 \begin{equation}
 K_c=Max\left[\frac{b}{a(b-c)},\frac{2b-3c}{a(b-c)}\right]
