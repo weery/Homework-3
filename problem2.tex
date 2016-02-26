@@ -59,21 +59,15 @@ In figure \ref{fig:pic2} we see the result of simulating the following system de
 
 This is done using integration with a time step of $\delta t = 0.01$ and also using a discretized Laplacian. Our Implementation uses four matrices, two that stores the previous state for both u and v in all positions, and two that are used for temporarily storing the state in each time step. This is done simply by having three for loops, one which takes care of the time steps and two that iterates through $x$ and $y$ of the matrices. At each time step one part of the integration is calculated.
 
-
-
 \begin{figure}[h]
-    \centering
-    System simulated with $D_v=2.3$.\\
-    \includegraphics[width=0.3\textwidth]{img/2bd23transient.png}
-    \includegraphics[width=0.3\textwidth]{img/2bd23.png}\\
-    System simulated with $D_v=3$.\\
-    \includegraphics[width=0.3\textwidth]{img/2bd3transient.png}
-    \includegraphics[width=0.3\textwidth]{img/2bd3.png}\\
-    System simulated with $D_v=5$.\\
-    \includegraphics[width=0.3\textwidth]{img/2bd5transient.png}
-    \includegraphics[width=0.3\textwidth]{img/2bd5.png}\\
-    System simulated with $D_v=9$.\\
-    \includegraphics[width=0.3\textwidth]{img/2bd9transient.png}
-    \includegraphics[width=0.3\textwidth]{img/2bd9.png}
-  \caption{\label{fig:pic2} The pictures to the left shows the system in the transient state after 25 time steps, and the pictures to the right shows the system after reaching the steady state.}
+\centering
+System Simulated with $D_v=2.3$\\
+\includegraphics[scale=0.5]{img/2bd23Comb.png}\\
+System Simulated with $D_v=3$\\
+\includegraphics[scale=0.5]{img/2bd3Comb.png}\\
+System Simulated with $D_v=5$\\
+\includegraphics[scale=0.5]{img/2bd5Comb.png}\\
+System Simulated with $D_v=9$\\
+\includegraphics[scale=0.5]{img/2bd9Comb.png}\\
+\caption{\label{fig:pic2b} The pictures to the left shows the system in the transient state after 200 time steps, for different values of $D_v$, and the pictures to the right shows the system after reaching the steady state.}
 \end{figure}
