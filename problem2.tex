@@ -49,6 +49,14 @@ Thus for the system to exhibit diffusion driven instability $D_v > 2.69$, since 
 
 \subsection*{b)}
 
+In figure 2 we see the result of simulating the following system on a 128 by 128 latice.
+$$\frac{\partial u}{\partial t} = a - (b-1)u + u^2v + \nabla^2 u$$
+$$\frac{\partial v}{\partial t} = bu - u^2v + D_v \nabla^2 v$$
+
+This is done using integration with a time step of $\delta t = 0.01$ and also using a discretized laplacian. Our Implementation uses four matrices, two that stores the previous state for both u and v in all positions, and two that are used for temporarily storing the state in each time step. This is done simply by having three for loops, one which takes care of the time steps and two that iterates through x and y of the matrices. At each time step one part of the integration is calculated.
+
+
+
 \begin{figure}[h]
     \centering
     System simulated with $D_v=2.3$.\\
