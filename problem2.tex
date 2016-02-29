@@ -13,33 +13,31 @@ For a spatially homogeneous steady state the following conditions must hold,
 $$0 = a - (b+1)u + u^2v$$
 $$0 = bu - u^2v$$
 
-The steady state 
+The steady state $(u^*,v^*)=(a,b/a)$ is found through simple calculations. To find if the steady state is stable the Jacobian is first calculated
 
-$$
-(u^*,v^*)
-$$
-is found through simple calculations. To find if the steady state is stable the Jacobian is first calculated
-$$J^* = \left(
+\begin{equation}
+\mathbb{J}^* = \left(
 \begin{array}{cc}
     b-1 & a^2 \\
     -b  & -a^2
 \end{array}
-\right).$$
+\right).
+\end{equation}
 
 For the steady state to be stable the following conditions must be true
 
-$$Tr(J^*) < 0$$
-$$Det(J^*) > 0.$$
+$$Tr(\mathbb{J}^*) < 0$$
+$$Det(\mathbb{J}^*) > 0.$$
 
 Inserting the given values $a=3$, $b=8$ the following results are produced
-$$Tr(J^*) = -2 < 0$$
-$$Det(J^*) = 9 > 0.$$
+$$Tr(\mathbb{J}^*) = -2 < 0$$
+$$Det(\mathbb{J}^*) = 9 > 0.$$
 Thus the steady state is stable.
 
 For the system to exhibit diffusion driven instability (DDI) the following conditions must also hold
 
 $$D_v \frac{\partial f}{\partial u} + \frac{\partial g}{\partial v} < 0$$
-$$(D_v \frac{\partial f}{\partial u}+ \frac{\partial g}{\partial v})^2 - 4D_v Det(J^*) > 0$$
+$$(D_v \frac{\partial f}{\partial u}+ \frac{\partial g}{\partial v})^2 - 4D_v Det(\mathbb{J}^*) > 0$$
 
 Inserting the values for $a, b$ and $(u^*, v^*)$, the first equation gives rise to the condition on $D_v$,
 
@@ -71,3 +69,5 @@ System Simulated with $D_v=9$\\
 \includegraphics[scale=0.5]{img/2bd9Comb.png}\\
 \caption{\label{fig:pic2b} The pictures to the left shows the system in the transient state after 200 time steps, for different values of $D_v$, and the pictures to the right shows the system after reaching the spatially inhomogeneous steady state.}
 \end{figure}
+
+In figure \ref{fig:pic2b} we see that the maximum value is present in all of the different values of $D_v$, but is rarer with increasing $D_v$. For larger values of $D_v$ the more often the local population dies out and bigger and bigger clusters of empty cells emerges.
